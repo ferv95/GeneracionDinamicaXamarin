@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GeneracionDinamica"
+             x:Class="GeneracionDinamica.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="entryNumBotones" 
+                   HorizontalOptions="CenterAndExpand" 
+                   Placeholder="Número de botones"
+                   Keyboard="Numeric"/>
+            <Button x:Name="btnGenerar"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Generar botones"/>
+            <ScrollView Orientation="Vertical">
+                <StackLayout BackgroundColor="AntiqueWhite"
+                             x:Name="layourContenedor"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand">
+                    <!--Aquí irán los elementos generados dinámicamente-->
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
